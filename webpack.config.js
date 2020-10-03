@@ -1,14 +1,14 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin")
+const HtmlWebPackPlugin = require('html-webpack-plugin')
 const htmlTemplate = require('html-webpack-template')
 
 module.exports = {
-  entry:['./src/index'],
+  entry: ['./src/index'],
   output: {
-    publicPath: "/",
+    publicPath: '/',
   },
 
   resolve: {
-    extensions: [".jsx", ".js", ".json"],
+    extensions: ['.jsx', '.js', '.json'],
   },
 
   devServer: {
@@ -21,13 +21,13 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
         },
       },
     ],
@@ -41,4 +41,4 @@ module.exports = {
       appMountId: 'root',
     }),
   ],
-};
+}
