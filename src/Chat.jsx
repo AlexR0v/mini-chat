@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { gql, useMutation } from '@apollo/client'
-import { Button, Col, Container, FormInput, Row } from 'shards-react'
+import { useMutation } from '@apollo/client'
+import { Container } from 'shards-react'
 import { Message } from './Message'
 import { POST_MESSAGE } from './actions'
 import { Input } from './Input'
